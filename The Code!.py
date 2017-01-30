@@ -117,6 +117,6 @@ def start():
         time.sleep(1)
         print("Game Over. 'Restart code to retry'")
     else:
-        print("YOU SUCK!!!")
+        print("YOURE A LOUSY IDIOT WHO DOESNT DESERVE TO PLAY THIS AMAZING GAME!!! GET THE F*** OUT!")
 start()
 
