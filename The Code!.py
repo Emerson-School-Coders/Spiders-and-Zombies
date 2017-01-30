@@ -1,7 +1,7 @@
 import time
 global Pizza
-
 def start():
+    alive = 1
     Name = input("Hola Senor! Oh wait... you don't speak spanish. Hello, my name is cody the computer. What's your name?")
     Pizza=""
     print("Hello "+Name+" I like Pizza, do you like pizza too? ")
@@ -14,17 +14,16 @@ def start():
         print("booo")
         time.sleep(1)
     bye()
-    if Pizza == "yes":
+    if Pizza == "yes" and alive == 1:
         Win()
-    else:
+    elif Pizza == "no" and alive == 1:
         Lose()
-
+    else:
+        print("YOU SUCK!!!")
 def bye():
     print("I guess I'll send you on your way then old friend.")
     time.sleep(1)
-
     path()
-
 def path():
     Path = input("You start going down a rickedy old path. You see a village in the distance. Setup camp('camp') or Keep Walking ('walk')")
     if Path == "camp":
@@ -61,7 +60,8 @@ def bad():
     print("You manage to kill one zombie but the rest swarm you")
     time.sleep(1)
     print("Game Over. 'Restart code to retry'")
-          
+    alive=0
+    
 def flee():
     print("You manage to get away and make it to the village.")
     time.sleep(1)
@@ -79,6 +79,7 @@ def dont():
     print("As you are leaving a creeper comes behind you and blows you up.")
     time.sleep(1)
     print("Game Over. 'Restart code to retry'")
+    alive=0
         
 def down():
     print("You find a chest and decide to loot it. A sword! Could be helpful later.")
@@ -93,6 +94,7 @@ def ded():
     print("You try to blend into the cave but the spider has good eye sight and spots you.")
     time.sleep(1)
     print("Game Over. 'Restart code to retry'")
+    alive=0
 
 def lucky():
     print("You slay the spider and grab the string he drops.")
