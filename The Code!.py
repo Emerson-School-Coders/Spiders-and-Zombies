@@ -1,5 +1,9 @@
 import time
+import os
 global Pizza
+def clear():
+    os.system("clear")
+    os.system("cls")
 def start():
     alive = 1
     Name = input("Hola Senor! Oh wait... you don't speak spanish. Hello, my name is cody the computer. What's your name?")
@@ -117,6 +121,17 @@ def start():
         time.sleep(1)
         print("Game Over. 'Restart code to retry'")
     else:
-        print("Stop playing this game if you have gotten this far...")
-start()
-
+        print("")
+while 1:
+    clear()
+    whattodo=''
+    while whattodo!='p' and whattodo!='e':
+        print("What would you like to do?")
+        print("Type p to play")
+        print("Type e to exit")
+        whattodo=input()
+        clear()
+    if whattodo=='p':
+        start()
+    else:
+        exit()
