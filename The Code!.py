@@ -14,6 +14,10 @@ def start():
         print("booo")
         time.sleep(1)
     bye()
+    if Pizza == "yes":
+        Win()
+    else:
+        Lose()
 
 def bye():
     print("I guess I'll send you on your way then old friend.")
@@ -61,7 +65,7 @@ def bad():
 def flee():
     print("You manage to get away and make it to the village.")
     time.sleep(1)
-    print("You find a nice person and they let you have some food and time.sleep for the night.")
+    print("You find a nice person and they let you have some food and sleep for the night.")
     time.sleep(1)
     print("When you wake up the village is abandoned. You wonder whats going on and run outside.")
     time.sleep(1)
@@ -77,7 +81,7 @@ def dont():
     print("Game Over. 'Restart code to retry'")
         
 def down():
-    print("You find an empty chest and decide to take it. Could be helpful later.")
+    print("You find a chest and decide to loot it. A sword! Could be helpful later.")
     time.sleep(1)
     cave = input("You suddenly are attacked by behind. Fight 'fight' or Run 'run'")
     if cave == "fight":
@@ -93,17 +97,15 @@ def ded():
 def lucky():
     print("You slay the spider and grab the string he drops.")
     time.sleep(1)
+    print("Hey the sword came in handy!")
+    time.sleep(1)
     print("You here a voice in the distance, it sounds like someone you know...")
     time.sleep(1)
     print("Cody comes around the corner and sees you.")
     time.sleep(1)
     print("Oh hello! I thought I might find you here")
     
-    if Pizza == "yes":
-        Win()
-    else:
-        Lose()
-
+    
 def Lose():
     print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry f or not telling you!")
     time.sleep(1)
