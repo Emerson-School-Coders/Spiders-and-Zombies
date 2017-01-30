@@ -1,25 +1,18 @@
-import time.time.time.sleep
+import time
 global Pizza
 
 def start():
     Name = input("Hola Senor! Oh wait... you don't speak spanish. Hello, my name is cody the computer. What's your name?")
-
-    Pizza = input("Hello "+Name+" I like Pizza, do you like pizza too? (yes, no)")
-
+    Pizza=""
+    print("Hello "+Name+" I like Pizza, do you like pizza too? ")
+    while Pizza!="yes" and Pizza!="no":
+        Pizza = input("yes/no: ")
     if Pizza == "yes":
-        Hurray()
-
+        print("I guess you arent so bad after all...")
+        time.sleep(5)
     else:
-        booo()
-
-def booo():
-    print("booo")
-    time.sleep(5)
-    bye()
-
-def Hurray():
-    print("I guess you arent so bad after all...")
-    time.sleep(5)
+        print("booo")
+        time.sleep(5)
     bye()
 
 def bye():
