@@ -40,14 +40,14 @@ def start():
             print("You start to enter a cave but don't know if it is a good idea. Go down or Don't go down")
             go = ""
             while go!="go" and go!="dont" and go!="don't":
-                go = input("go/dont")
+                go = input("go/dont: ")
             if go == "go":        
                 print("You find a chest and decide to loot it. A sword! Could be helpful later.")
                 time.sleep(1)
                 print("You suddenly are attacked by behind. Fight or Hide")
                 cave = ""
                 while cave!="fight" and cave!="hide":
-                    cave = input("fight/hide")
+                    cave = input("fight/hide: ")
                 if cave == "fight":
                     print("You slay the spider and grab the string he drops.")
                     time.sleep(1)
@@ -94,10 +94,10 @@ def start():
                     time.sleep(1)
                     print("Hey the sword came in handy!")
                     time.sleep(1)
-                    print("You here a voice in the distance, it sounds like someone you know...")
-                    time.sleep(1)
+                    print("You hear a voice in the distance, it sounds like someone you know...")
+                    time.sleep(5)
                     print("Cody comes around the corner and sees you.")
-                    time.sleep(1)
+                    time.sleep(5)
                     print("Oh hello! I thought I might find you here")
                 else:
                     print("You try to blend into the cave but the spider has good eye sight and spots you.")
@@ -116,15 +116,15 @@ def start():
             alive=0
     if Pizza == "yes" and alive == 1:
         print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry for not telling you!")
-        time.sleep(3)
+        time.sleep(5)
         print("But because you entered yes you WIN!... a free back massage!")
-        time.sleep(4)
+        time.sleep(5)
         print("Yeah... That kinda sounded better in my head...")
-        time.sleep(3)
+        time.sleep(5)
         print("Well I will see you in the next game!")
-        time.sleep(2)
-        print("You WIN! Play my next game when it comes out!")
         time.sleep(4)
+        print("You WIN! Play my next game when it comes out!")
+        time.sleep(5)
     elif Pizza == "no" and alive == 1:
         print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry for not telling you!")
         time.sleep(3)
