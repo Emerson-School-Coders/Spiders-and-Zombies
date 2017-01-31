@@ -19,11 +19,17 @@ def start():
         time.sleep(1)
     print("I guess I'll send you on your way then old friend.")
     time.sleep(1)
-    Path = input("You start going down a rickedy old path. You see a village in the distance. Setup camp('camp') or Keep Walking ('walk')")
+    print("You start going down a rickedy old path. You see a village in the distance. Setup camp or Keep Walking")
+    Path = ""
+    while Path!="camp" and Path!="walk":
+        Path = input("camp/walk: ")
     if Path == "camp":
         print("You set up camp but can't get a fire started.")
         time.sleep(1)
-        run =  input("you are almost all set up when... a horde of zombies attack! Run 'run' or fight 'fight'")
+        print("you are almost all set up when... a horde of zombies attack! Run or Fight")
+        run = ""
+        while run!="run" and run!="fight":
+            run = input("run/fight: ")
         if run == "run":
             print("You manage to get away and make it to the village.")
             time.sleep(1)
@@ -31,11 +37,17 @@ def start():
             time.sleep(1)
             print("When you wake up the village is abandoned. You wonder whats going on and run outside.")
             time.sleep(1)
-            go = input("You start to enter a cave but don't know if it is a good idea. Go down 'go' or Don't go down 'dont'")
+            print("You start to enter a cave but don't know if it is a good idea. Go down or Don't go down")
+            go = ""
+            while go!="go" and go!="dont" and go!="don't":
+                go = input("go/dont")
             if go == "go":        
                 print("You find a chest and decide to loot it. A sword! Could be helpful later.")
                 time.sleep(1)
-                cave = input("You suddenly are attacked by behind. Fight 'fight' or Run 'run'")
+                print("You suddenly are attacked by behind. Fight or Hide")
+                cave = ""
+                while cave!="fight" and cave!="hide":
+                    cave = input("fight/hide")
                 if cave == "fight":
                     print("You slay the spider and grab the string he drops.")
                     time.sleep(1)
@@ -49,17 +61,17 @@ def start():
                 else:
                     print("You try to blend into the cave but the spider has good eye sight and spots you.")
                     time.sleep(1)
-                    print("Game Over. 'Restart code to retry'")
+                    print("Game Over.")
                     alive=0
             else:
                 print("As you are leaving a creeper comes behind you and blows you up.")
                 time.sleep(1)
-                print("Game Over. 'Restart code to retry'")
+                print("Game Over.")
                 alive=0
         else:
             print("You manage to kill one zombie but the rest swarm you")
             time.sleep(1)
-            print("Game Over. 'Restart code to retry'")
+            print("Game Over.")
             alive=0
     else:
         print("The village is farther away than you think but you keep walking.")
@@ -90,17 +102,17 @@ def start():
                 else:
                     print("You try to blend into the cave but the spider has good eye sight and spots you.")
                     time.sleep(1)
-                    print("Game Over. 'Restart code to retry'")
+                    print("Game Over.")
                     alive=0
             else:
                 print("As you are leaving a creeper comes behind you and blows you up.")
                 time.sleep(1)
-                print("Game Over. 'Restart code to retry'")
+                print("Game Over.")
                 alive=0
         else:
             print("You manage to kill one zombie but the rest swarm you")
             time.sleep(1)
-            print("Game Over. 'Restart code to retry'")
+            print("Game Over.")
             alive=0
     if Pizza == "yes" and alive == 1:
         print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry for not telling you!")
