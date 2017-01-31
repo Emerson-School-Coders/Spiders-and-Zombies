@@ -104,22 +104,22 @@ def start():
             alive=0
     if Pizza == "yes" and alive == 1:
         print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry for not telling you!")
-        time.sleep(1)
+        time.sleep(3)
         print("But because you entered yes you WIN!... a free back massage!")
-        time.sleep(1)
+        time.sleep(4)
         print("Yeah... That kinda sounded better in my head...")
-        time.sleep(1)
+        time.sleep(3)
         print("Well I will see you in the next game!")
-        time.sleep(1)
+        time.sleep(2)
         print("You WIN! Play my next game when it comes out!")
+        time.sleep(4)
     elif Pizza == "no" and alive == 1:
-        print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry f or not telling you!")
-        time.sleep(1)
+        print("Remember the Pizza question in the beginning? Yeah that kinda decides if you win or not, sorry for not telling you!")
+        time.sleep(3)
         print("But we're still friends, right?")
-        time.sleep(1)
+        time.sleep(4)
         print("Well then I will see you in the end old friend!")
-        time.sleep(1)
-        print("Game Over. 'Restart code to retry'")
+        time.sleep(4)
     else:
         print("")
 while 1:
